@@ -1,7 +1,7 @@
-<%= simple_form_for @photo, url: photos_path do |f| %>
+<%= simple_form_for @photo do |f| %>
 
-    <%= f.label :photograph %>
-    <%= f.attachment_field :photograph, as: :file %>
+    <%= f.label :profile_image %>
+    <%= f.attachment_field :profile_image %>
 
   <%= f.input :caption %>
   <%= f.input :source, label: "Your name" %>

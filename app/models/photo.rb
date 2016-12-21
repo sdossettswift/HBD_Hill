@@ -1,3 +1,4 @@
 class Photo < ApplicationRecord
-   attachment :photograph, destroy: false
+  attachment :profile_image
+
 end
