@@ -1,3 +1,3 @@
 class Photo < ApplicationRecord
-  attachment:photo
+   attachment :photograph, destroy: false
 end
