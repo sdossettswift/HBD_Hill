@@ -1,0 +1,5 @@
+<%= simple_form_for @memory, url: memories_path do |f| %>
+  <%= f.input :body, label: "Your favorite memory of Hill...  " %>
+  <%= f.input :source, label: "Your name" %>
+  <%= f.button :submit%>
+<% end %>

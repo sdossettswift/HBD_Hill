@@ -1,0 +1,11 @@
+<%= simple_form_for @photo, url: photos_path do |f| %>
+
+  <div class="form-group">
+    <%= f.label :photo %>
+    <%= f.attachment_field :photo, as: :file, class: "form-control" %>
+  </div>
+
+  <%= f.input :caption %>
+  <%= f.input :source, label: "Your name" %>
+  <%= f.button :submit%>
+<% end %>

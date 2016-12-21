@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>HBDHill</title>
+    <title>WeLoveHill</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,35 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container">
+      <h1> <%= link_to "We Love Hill", root_path%></h1>
+      <hr>
+      <ul>
+        <li><%= link_to "Photos", new_photo_path %></li>
+        <li><%= link_to "Memories", new_memory_path %></li>
+        <li><%= link_to "Wishes", new_wish_path %></li>
+      </ul>
+      <div class="container">
+
+         <% if notice %>
+            <div class="container">
+               <div class="alert alert-info" role="alert">
+                  <%= notice %>
+                </div>
+              </div>
+          <% end %>
+
+          <% if alert %>
+          <div class="container">
+              <div class="alert alert-danger" role="alert">
+                  <%= alert %>
+              </div>
+          </div>
+          <% end %>
+
+
+         <%= yield %>
+      </div>
+    </div>
   </body>
 </html>
