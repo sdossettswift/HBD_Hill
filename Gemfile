@@ -27,6 +27,14 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+gem 'bootstrap-sass'
+gem 'bootstrap-material-design'
+gem 'minitest-rails'
+gem 'simple_form'
+gem 'font-awesome-sass'
+gem 'rails_12factor' #for heroku
+
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
